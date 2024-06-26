@@ -5,7 +5,8 @@
     --accent2: rgb(120, 11, 33);
     --bg: #fff;
     --text: #333;
-    --bg-subtitle: rgb(243, 199, 208)
+    --bg-subtitle: rgb(243, 199, 208);
+    --input-color: #e2e2e2;
 }
 
 * {
@@ -226,4 +227,40 @@ nav.active {
 
 .chefs-box:hover .chefs-content {
     top: 0;
+}
+
+
+
+
+.contact-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-container form {
+    width: 960px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    height: 50px;
+    border: 1px solid var(--input-color);
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 7px;
+}
+
+textarea {
+    height: 150px;
+    resize: none;
+}
+
+input:focus, textarea:focus {
+    border-color: var(--accent);
+}
+
+input[type="submit"] {
+    cursor: pointer;
 }
