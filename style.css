@@ -46,6 +46,24 @@ img {
     background-color: var(--accent2);
 }
 
+.section-heading {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.section-heading h2 {
+    font-size: clamp(25px, 5vw, 40px);
+    color: var(--text);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.section-heading span {
+    color: var(--accent);
+}
+
+
+
 nav {
     width: 100%;
     position: fixed;
@@ -92,6 +110,10 @@ nav.active {
     display: none;
 }
 
+
+
+
+
 .home {
     height: 100vh;
     display: flex;
@@ -127,3 +149,33 @@ nav.active {
     margin-bottom: 2rem;
 }
 
+
+
+
+.services-container {
+    display: flex;
+}
+
+.services-box:nth-child(1), .services-box:nth-child(2) {
+    margin-right: 1.5rem;
+}
+
+.services-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.services-box img {
+    width: 100px;
+}
+
+.services-box h3 {
+    font-size: clamp(20px, 4vw, 25px);
+}
+
+.services-box p {
+    margin-top: 1rem;
+}
