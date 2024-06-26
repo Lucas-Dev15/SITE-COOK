@@ -77,6 +77,7 @@ nav {
 }
 
 nav.active {
+    background-color: white;
     box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
     border-bottom: 1px solid var(--accent);
 }
@@ -276,4 +277,36 @@ input[type="submit"] {
     background-color: var(--accent);
     color: var(--bg);
     text-align: center;
+}
+
+
+
+
+@media screen and (max-width: 780px) {
+    #burger-menu {
+        display: block;
+    }
+
+    .navigation {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        flex-direction: column;
+        width: 280px;
+        height: 100vh;
+        box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+        padding: 0 1rem;
+        transition: all 0.2s ease-in-out;
+        border-left: 1px solid var(--accent);
+        background-color: var(--bg);
+    }
+
+    .navigation a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+
+    .navigation.active {
+        right: 0;
+    }
 }
