@@ -264,3 +264,16 @@ input:focus, textarea:focus {
 input[type="submit"] {
     cursor: pointer;
 }
+
+
+
+
+.copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    background-color: var(--accent);
+    color: var(--bg);
+    text-align: center;
+}
